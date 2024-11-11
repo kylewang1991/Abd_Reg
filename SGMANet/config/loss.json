@@ -1,0 +1,42 @@
+{
+    "l2" :
+    {
+        "int_downsize": 2
+    },
+    "dice" :
+    {
+        
+    },
+    "l1" :
+    {
+
+    },
+    "ncc" :
+    {
+
+    },
+    "mse":
+    {
+
+    },
+    "mind":
+    {
+
+    },
+    "boundary":
+    {
+
+    },
+    "dice_boundary_comb":
+    {
+        
+    },
+    "mi":
+    {
+        "num_bin" : 32
+    },
+    "mine":
+    {
+        
+    }
+}

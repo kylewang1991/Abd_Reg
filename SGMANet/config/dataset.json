@@ -1,0 +1,73 @@
+{
+    "chaos" : {
+        "path" : "../dataset/chaos/chaos_dataset_adjusted.json",
+        "exp" : "intra",
+        "path_affine_mat" : null,
+        "image_shape" : [64, 256, 256],
+        "batch_size" : 1,
+        "train_use_mat": false,
+        "valid_use_mat": false,
+        "test_use_mat": false,
+        "random_affine_enhancement" : true       
+    },
+
+    "amos" : {
+        "path" : "../dataset/amos/amos22_dataset_adjusted.json",
+        "exp" : "inter",
+        "path_affine_mat": null,
+        "image_shape" : [64, 256, 256],
+        "batch_size" : 1,
+        "train_use_mat": false,
+        "valid_use_mat": false,
+        "test_use_mat": false,
+        "random_affine_enhancement" : true            
+    },
+
+    "chaos_affine_mi" : {
+        "path" : "../dataset/chaos/chaos_dataset_adjusted.json",
+        "exp" : "intra",
+        "path_affine_mat" : "../CHAOS_Train_Sets/Train_Sets/affine_mi",
+        "image_shape" : [64, 256, 256],
+        "batch_size" : 1,
+        "train_use_mat": true,
+        "valid_use_mat": true,
+        "test_use_mat":true,
+        "random_affine_enhancement" : true       
+    },
+
+    "chaos_affine_struct" : {
+        "path" : "../dataset/chaos/chaos_dataset_adjusted.json",
+        "exp" : "intra",
+        "path_affine_mat" : "../CHAOS_Train_Sets/Train_Sets/affine_struct",
+        "image_shape" : [64, 256, 256],
+        "batch_size" : 1,
+        "train_use_mat": true,
+        "valid_use_mat": true,
+        "test_use_mat":true,
+        "random_affine_enhancement" : true       
+    },   
+
+    "amos_affine_mi" : {
+        "path" : "../dataset/amos/amos22_dataset_adjusted.json",
+        "exp" : "inter",
+        "path_affine_mat": "../amos22/amos22/affine_mi",
+        "image_shape" : [64, 256, 256],
+        "batch_size" : 1,
+        "train_use_mat": true,
+        "valid_use_mat": true,
+        "test_use_mat":true,
+        "random_affine_enhancement" : false            
+    },
+
+    "amos_affine_struct" : {
+        "path" : "../dataset/amos/amos22_dataset_adjusted.json",
+        "exp" : "inter",
+        "path_affine_mat": "../amos22/amos22/affine_struct",
+        "image_shape" : [64, 256, 256],
+        "batch_size" : 1,
+        "train_use_mat": true,
+        "valid_use_mat": true,
+        "test_use_mat":true,
+        "random_affine_enhancement" : false            
+    }
+}

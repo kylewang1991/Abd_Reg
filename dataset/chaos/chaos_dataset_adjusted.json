@@ -1,0 +1,281 @@
+{
+    "provided_data": {
+        "0": [
+            "image",
+            "label"
+        ],
+        "1": [
+            "image",
+            "label"
+        ]
+    },
+    "registration_direction": {
+        "fixed": 0,
+        "moving": 1
+    },
+    "modality": {
+        "0": "MR_T1IN",
+        "1": "MR_T2SPIR"
+    },
+    "img_shift": {
+        "fixed": "MR_T1IN",
+        "moving": "MR_T2SPIR"
+    },
+    "labels": {
+        "0": {
+            "0": "background",
+            "1": "liver",
+            "2": "spleen",
+            "3": "right kidney",
+            "4": "left kidney"
+        },
+        "1": {
+            "0": "background",
+            "1": "liver",
+            "2": "spleen",
+            "3": "right kidney",
+            "4": "left kidney"
+        }
+    },
+    "tensorImageSize": {
+        "0": "3D",
+        "1": "3D"
+    },
+    "tensorImageShape": {
+        "0": [
+            256,
+            256,
+            64
+        ],
+        "1": [
+            256,
+            256,
+            64
+        ]
+    },
+    "voxelSpacing": {
+        "0": [
+            1.67,
+            1.67,
+            4
+        ],
+        "1": [
+            1.67,
+            1.67,
+            4
+        ]
+    },
+    "filedClip": {
+        "0": [
+            0,
+            0,
+            0
+        ],
+        "1": [
+            0,
+            0,
+            0
+        ]
+    },
+    "voxelRange": {
+        "0": [
+            0,
+            800
+        ],
+        "1": [
+            0,
+            1500
+        ]
+    },
+    "numTraining": {
+        "0": 14,
+        "1": 14
+    },
+    "numValid": {
+        "0": 2,
+        "1": 2
+    },
+    "numTest": {
+        "0": 4,
+        "1": 4
+    },
+    "training": {
+        "0": [
+            {
+                "image": "MR/21/T1DUAL/DICOM_anon/21_adjust.nii.gz",
+                "label": "MR/21/T1DUAL/Ground/21_adjust.nii.gz"
+            },
+            {
+                "image": "MR/37/T1DUAL/DICOM_anon/37_adjust.nii.gz",
+                "label": "MR/37/T1DUAL/Ground/37_adjust.nii.gz"
+            },
+            {
+                "image": "MR/33/T1DUAL/DICOM_anon/33_adjust.nii.gz",
+                "label": "MR/33/T1DUAL/Ground/33_adjust.nii.gz"
+            },
+            {
+                "image": "MR/20/T1DUAL/DICOM_anon/20_adjust.nii.gz",
+                "label": "MR/20/T1DUAL/Ground/20_adjust.nii.gz"
+            },
+            {
+                "image": "MR/8/T1DUAL/DICOM_anon/8_adjust.nii.gz",
+                "label": "MR/8/T1DUAL/Ground/8_adjust.nii.gz"
+            },
+            {
+                "image": "MR/10/T1DUAL/DICOM_anon/10_adjust.nii.gz",
+                "label": "MR/10/T1DUAL/Ground/10_adjust.nii.gz"
+            },
+            {
+                "image": "MR/3/T1DUAL/DICOM_anon/3_adjust.nii.gz",
+                "label": "MR/3/T1DUAL/Ground/3_adjust.nii.gz"
+            },
+            {
+                "image": "MR/1/T1DUAL/DICOM_anon/1_adjust.nii.gz",
+                "label": "MR/1/T1DUAL/Ground/1_adjust.nii.gz"
+            },
+            {
+                "image": "MR/31/T1DUAL/DICOM_anon/31_adjust.nii.gz",
+                "label": "MR/31/T1DUAL/Ground/31_adjust.nii.gz"
+            },
+            {
+                "image": "MR/34/T1DUAL/DICOM_anon/34_adjust.nii.gz",
+                "label": "MR/34/T1DUAL/Ground/34_adjust.nii.gz"
+            },
+            {
+                "image": "MR/2/T1DUAL/DICOM_anon/2_adjust.nii.gz",
+                "label": "MR/2/T1DUAL/Ground/2_adjust.nii.gz"
+            },
+            {
+                "image": "MR/39/T1DUAL/DICOM_anon/39_adjust.nii.gz",
+                "label": "MR/39/T1DUAL/Ground/39_adjust.nii.gz"
+            },
+            {
+                "image": "MR/15/T1DUAL/DICOM_anon/15_adjust.nii.gz",
+                "label": "MR/15/T1DUAL/Ground/15_adjust.nii.gz"
+            },
+            {
+                "image": "MR/38/T1DUAL/DICOM_anon/38_adjust.nii.gz",
+                "label": "MR/38/T1DUAL/Ground/38_adjust.nii.gz"
+            }
+        ],
+        "1": [
+            {
+                "image": "MR/21/T2SPIR/DICOM_anon/21_adjust.nii.gz",
+                "label": "MR/21/T2SPIR/Ground/21_adjust.nii.gz"
+            },
+            {
+                "image": "MR/37/T2SPIR/DICOM_anon/37_adjust.nii.gz",
+                "label": "MR/37/T2SPIR/Ground/37_adjust.nii.gz"
+            },
+            {
+                "image": "MR/33/T2SPIR/DICOM_anon/33_adjust.nii.gz",
+                "label": "MR/33/T2SPIR/Ground/33_adjust.nii.gz"
+            },
+            {
+                "image": "MR/20/T2SPIR/DICOM_anon/20_adjust.nii.gz",
+                "label": "MR/20/T2SPIR/Ground/20_adjust.nii.gz"
+            },
+            {
+                "image": "MR/8/T2SPIR/DICOM_anon/8_adjust.nii.gz",
+                "label": "MR/8/T2SPIR/Ground/8_adjust.nii.gz"
+            },
+            {
+                "image": "MR/10/T2SPIR/DICOM_anon/10_adjust.nii.gz",
+                "label": "MR/10/T2SPIR/Ground/10_adjust.nii.gz"
+            },
+            {
+                "image": "MR/3/T2SPIR/DICOM_anon/3_adjust.nii.gz",
+                "label": "MR/3/T2SPIR/Ground/3_adjust.nii.gz"
+            },
+            {
+                "image": "MR/1/T2SPIR/DICOM_anon/1_adjust.nii.gz",
+                "label": "MR/1/T2SPIR/Ground/1_adjust.nii.gz"
+            },
+            {
+                "image": "MR/31/T2SPIR/DICOM_anon/31_adjust.nii.gz",
+                "label": "MR/31/T2SPIR/Ground/31_adjust.nii.gz"
+            },
+            {
+                "image": "MR/34/T2SPIR/DICOM_anon/34_adjust.nii.gz",
+                "label": "MR/34/T2SPIR/Ground/34_adjust.nii.gz"
+            },
+            {
+                "image": "MR/2/T2SPIR/DICOM_anon/2_adjust.nii.gz",
+                "label": "MR/2/T2SPIR/Ground/2_adjust.nii.gz"
+            },
+            {
+                "image": "MR/39/T2SPIR/DICOM_anon/39_adjust.nii.gz",
+                "label": "MR/39/T2SPIR/Ground/39_adjust.nii.gz"
+            },
+            {
+                "image": "MR/15/T2SPIR/DICOM_anon/15_adjust.nii.gz",
+                "label": "MR/15/T2SPIR/Ground/15_adjust.nii.gz"
+            },
+            {
+                "image": "MR/38/T2SPIR/DICOM_anon/38_adjust.nii.gz",
+                "label": "MR/38/T2SPIR/Ground/38_adjust.nii.gz"
+            }
+        ]
+    },
+    "valid": {
+        "0": [
+            {
+                "image": "MR/13/T1DUAL/DICOM_anon/13_adjust.nii.gz",
+                "label": "MR/13/T1DUAL/Ground/13_adjust.nii.gz"
+            },
+            {
+                "image": "MR/36/T1DUAL/DICOM_anon/36_adjust.nii.gz",
+                "label": "MR/36/T1DUAL/Ground/36_adjust.nii.gz"
+            }
+        ],
+        "1": [
+            {
+                "image": "MR/13/T2SPIR/DICOM_anon/13_adjust.nii.gz",
+                "label": "MR/13/T2SPIR/Ground/13_adjust.nii.gz"
+            },
+            {
+                "image": "MR/36/T2SPIR/DICOM_anon/36_adjust.nii.gz",
+                "label": "MR/36/T2SPIR/Ground/36_adjust.nii.gz"
+            }
+        ]
+    },
+    "test": {
+        "0": [
+            {
+                "image": "MR/32/T1DUAL/DICOM_anon/32_adjust.nii.gz",
+                "label": "MR/32/T1DUAL/Ground/32_adjust.nii.gz"
+            },
+            {
+                "image": "MR/19/T1DUAL/DICOM_anon/19_adjust.nii.gz",
+                "label": "MR/19/T1DUAL/Ground/19_adjust.nii.gz"
+            },
+            {
+                "image": "MR/22/T1DUAL/DICOM_anon/22_adjust.nii.gz",
+                "label": "MR/22/T1DUAL/Ground/22_adjust.nii.gz"
+            },
+            {
+                "image": "MR/5/T1DUAL/DICOM_anon/5_adjust.nii.gz",
+                "label": "MR/5/T1DUAL/Ground/5_adjust.nii.gz"
+            }
+        ],
+        "1": [
+            {
+                "image": "MR/32/T2SPIR/DICOM_anon/32_adjust.nii.gz",
+                "label": "MR/32/T2SPIR/Ground/32_adjust.nii.gz"
+            },
+            {
+                "image": "MR/19/T2SPIR/DICOM_anon/19_adjust.nii.gz",
+                "label": "MR/19/T2SPIR/Ground/19_adjust.nii.gz"
+            },
+            {
+                "image": "MR/22/T2SPIR/DICOM_anon/22_adjust.nii.gz",
+                "label": "MR/22/T2SPIR/Ground/22_adjust.nii.gz"
+            },
+            {
+                "image": "MR/5/T2SPIR/DICOM_anon/5_adjust.nii.gz",
+                "label": "MR/5/T2SPIR/Ground/5_adjust.nii.gz"
+            }
+        ]
+    },
+    "root_dir": "../CHAOS_Train_Sets/Train_Sets"
+}

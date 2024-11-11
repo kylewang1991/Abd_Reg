@@ -1,0 +1,58 @@
+{
+    "experiment" : "sgmatrans_0",
+
+
+    "data" : {
+        "use_distance" : false,
+        "use_weight" : false,
+        "roi_index" : [0],
+        "distance_inner" : 30,
+        "distance_outer" : 70,
+        "segma" : 2  
+    },
+
+    "train" : {
+        "epochs" : 3000,
+        "train_steps_per_epoch" : 300,
+        "eval_steps_per_epoch" : 50,
+        "lr": 1e-4
+    },
+
+    "model": {
+        "type" : "trans_base",
+        "transform_type" : "Nonlinear",
+        "param" : {
+
+        },
+        "int_steps" : 7,
+        "int_downsize" : 2
+    },
+
+    "intensity_loss" :
+    {
+        "type" : "mind",
+        "param" : {
+
+        },
+        "weight" : 1
+    },
+
+    "deformation_loss" :
+    {
+        "type" : "l2",
+        "param" : {
+
+        },
+        "weight" : 0.05
+    },
+
+    "struct_loss" :
+    {
+        "type" : "dice",
+        "param" : {
+
+        },
+        "weight" : 0
+    }
+
+}

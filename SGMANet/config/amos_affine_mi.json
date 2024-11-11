@@ -1,0 +1,57 @@
+{
+    "experiment" : "affine_mi",
+
+    "data" : {
+            "use_distance" : false,
+            "use_weight" : false,
+            "roi_index" : [0],
+            "distance_inner" : 30,
+            "distance_outer" : 70,
+            "segma" : 2
+    },
+
+    "train" : {
+        "epochs" : 6000,
+        "train_steps_per_epoch" : 300,
+        "eval_steps_per_epoch" : 50,
+        "lr": 1e-4
+    },
+
+    "model": {
+        "type" : "trans_tiny_3",
+        "transform_type" : "Similarity",
+        "param" : {
+
+        },
+        "int_steps" : 0,
+        "int_downsize" : 1      
+    },
+
+    "intensity_loss" :
+    {
+        "type" : "mi",
+        "param" : {
+            "num_bin" : 32
+        },
+        "weight" : 1
+    },
+
+    "deformation_loss" :
+    {
+        "type" : "l2",
+        "param" : {
+
+        },
+        "weight" : 0
+    },
+
+    "struct_loss" :
+    {
+        "type" : "dice",
+        "param" : {
+
+        },
+        "weight" : 0
+    }
+
+}

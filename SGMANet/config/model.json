@@ -1,0 +1,139 @@
+{
+    "conv_base":
+    {
+        "core" : "conv",
+        "enc" : [16, 32, 32, 32],
+        "dec" : [32, 32, 32, 32, 32, 16, 16]
+    },
+    "conv_double":
+    {
+        "core" : "conv",
+        "enc" : [32, 64, 64, 64],
+        "dec" : [64, 64, 64, 64, 64, 32, 32]
+    },
+
+    "trans_tiny":
+    {
+        "core" : "trans",
+        "if_transskip" : true,
+        "if_convskip" : true,
+        "patch_size" : 4,
+        "in_chans" : 2,
+        "embed_dim" : 32,
+        "depths" : [2, 2, 4, 2],
+        "num_heads" : [2, 2, 4, 4],
+        "window_size" : [2, 8, 8],
+        "mlp_ratio" : 4,
+        "pat_merg_rf" : 4,
+        "qkv_bias" : false,
+        "drop_rate" : 0,
+        "drop_path_rate" : 0.3,
+        "ape" : false,
+        "spe" : false,
+        "rpe" : true,
+        "patch_norm" : true,
+        "use_checkpoint" : false,
+        "out_indices" : [0, 1, 2, 3],
+        "reg_head_chan" : 16
+    },
+
+    "trans_tiny_2":
+    {
+        "core" : "trans",
+        "if_transskip" : true,
+        "if_convskip" : true,
+        "patch_size" : 4,
+        "in_chans" : 2,
+        "embed_dim" : 16,
+        "depths" : [2, 2, 4, 2],
+        "num_heads" : [2, 2, 4, 4],
+        "window_size" : [2, 8, 8],
+        "mlp_ratio" : 4,
+        "pat_merg_rf" : 4,
+        "qkv_bias" : false,
+        "drop_rate" : 0,
+        "drop_path_rate" : 0.3,
+        "ape" : false,
+        "spe" : false,
+        "rpe" : true,
+        "patch_norm" : true,
+        "use_checkpoint" : false,
+        "out_indices" : [0, 1, 2, 3],
+        "reg_head_chan" : 16
+    },
+
+    "trans_tiny_3":
+    {
+        "core" : "trans",
+        "if_transskip" : true,
+        "if_convskip" : true,
+        "patch_size" : 4,
+        "in_chans" : 2,
+        "embed_dim" : 12,
+        "depths" : [1, 1, 2, 2],
+        "num_heads" : [1, 1, 2, 2],
+        "window_size" : [2, 8, 8],
+        "mlp_ratio" : 4,
+        "pat_merg_rf" : 4,
+        "qkv_bias" : false,
+        "drop_rate" : 0,
+        "drop_path_rate" : 0.3,
+        "ape" : false,
+        "spe" : false,
+        "rpe" : true,
+        "patch_norm" : true,
+        "use_checkpoint" : false,
+        "out_indices" : [0, 1, 2, 3],
+        "reg_head_chan" : 16
+    },
+
+    "trans_chaos":
+    {
+        "core" : "trans",
+        "if_transskip" : true,
+        "if_convskip" : true,
+        "patch_size" : 4,
+        "in_chans" : 2,
+        "embed_dim" : 96,
+        "depths" : [2, 2, 4, 2],
+        "num_heads" : [2, 2, 4, 4],
+        "window_size" : [2, 8, 8],
+        "mlp_ratio" : 4,
+        "pat_merg_rf" : 4,
+        "qkv_bias" : false,
+        "drop_rate" : 0,
+        "drop_path_rate" : 0.3,
+        "ape" : false,
+        "spe" : false,
+        "rpe" : true,
+        "patch_norm" : true,
+        "use_checkpoint" : false,
+        "out_indices" : [0, 1, 2, 3],
+        "reg_head_chan" : 16
+    },
+
+    "trans_base":
+    {
+        "core" : "trans",
+        "if_transskip" : true,
+        "if_convskip" : true,
+        "patch_size" : 4,
+        "in_chans" : 2,
+        "embed_dim" : 96,
+        "depths" : [2, 2, 4, 2],
+        "num_heads" : [4, 4, 8, 8],
+        "window_size" : [2, 8, 8],
+        "mlp_ratio" : 4,
+        "pat_merg_rf" : 4,
+        "qkv_bias" : false,
+        "drop_rate" : 0,
+        "drop_path_rate" : 0.3,
+        "ape" : false,
+        "spe" : false,
+        "rpe" : true,
+        "patch_norm" : true,
+        "use_checkpoint" : false,
+        "out_indices" : [0, 1, 2, 3],
+        "reg_head_chan" : 16
+    }
+}
